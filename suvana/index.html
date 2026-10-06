@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUVANA</title>
+    <meta name="description" content="SUVANA. American streetwear. Built different." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <div class="grain"></div>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="loader" id="loader">
+      <div class="loader-mark">SUVANA</div>
+      <div class="loader-line"><span></span></div>
+    </div>
+    <header id="site-header"></header>
+    <nav id="mobile-nav"></nav>
+    <div class="page-wrap">
+      <section class="hero">
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-lines"></div>
+        <div class="hero-content">
+          <h1 class="hero-brand" data-i18n="hero.brand">SUVANA</h1>
+          <p class="hero-line" data-i18n="hero.line">STREETWEAR</p>
+          <p class="hero-sub" data-i18n="hero.sub"></p>
+          <div class="hero-cta">
+            <a class="btn hoverable" href="shop.html" data-i18n="hero.cta">SHOP COLLECTION</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee">
+        <div class="marquee-track" id="marquee-text"></div>
+      </div>
+
+      <section class="section">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker" data-i18n="latest.kicker"></p>
+            <h2 class="display" data-i18n="latest.title"></h2>
+          </div>
+          <a class="btn hoverable" href="shop.html" data-i18n="latest.viewAll"></a>
+        </div>
+        <div class="product-grid" id="latest-grid"></div>
+      </section>
+
+      <section class="cat-block">
+        <img class="cat-bg img-reveal" data-cat-img="hoodies" data-parallax="0.2" alt="SUVANA hoodies" />
+        <div class="cat-veil"></div>
+        <div class="cat-copy reveal">
+          <h2 data-i18n="cats.hoodiesTitle"></h2>
+          <p data-i18n="cats.hoodiesLine"></p>
+          <a class="btn hoverable" href="shop.html?cat=hoodies" data-i18n="cats.hoodiesCta"></a>
+        </div>
+      </section>
+
+      <section class="split-cats">
+        <article class="cat-block">
+          <img class="cat-bg img-reveal" data-cat-img="sets" alt="SUVANA sets" />
+          <div class="cat-veil"></div>
+          <div class="cat-copy reveal">
+            <h2 data-i18n="cats.setsTitle"></h2>
+            <p data-i18n="cats.setsLine"></p>
+            <a class="btn hoverable" href="shop.html?cat=sets" data-i18n="cats.setsCta"></a>
+          </div>
+        </article>
+        <article class="cat-block">
+          <img class="cat-bg img-reveal" data-cat-img="tshirts" alt="SUVANA tees" />
+          <div class="cat-veil"></div>
+          <div class="cat-copy reveal">
+            <h2 data-i18n="cats.teesTitle"></h2>
+            <p data-i18n="cats.teesLine"></p>
+            <a class="btn hoverable" href="shop.html?cat=tshirts" data-i18n="cats.teesCta"></a>
+          </div>
+        </article>
+      </section>
+
+      <section class="cat-block">
+        <img class="cat-bg img-reveal" data-cat-img="pants" data-parallax="0.15" alt="SUVANA pants" />
+        <div class="cat-veil"></div>
+        <div class="cat-copy reveal">
+          <h2 data-i18n="cats.pantsTitle"></h2>
+          <p data-i18n="cats.pantsLine"></p>
+          <a class="btn hoverable" href="shop.html?cat=pants" data-i18n="cats.pantsCta"></a>
+        </div>
+      </section>
+
+      <section class="section about-grid" id="about-home">
+        <div class="reveal-left">
+          <p class="kicker" data-i18n="about.kicker"></p>
+          <h2 class="display" data-i18n="about.headline"></h2>
+          <p class="lede" data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+          <p data-i18n="about.p3"></p>
+          <a class="btn hoverable" href="about.html" data-i18n="about.cta"></a>
+        </div>
+        <div class="about-photo reveal-right">
+          <img loading="lazy" data-parallax="0.12" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=80" alt="SUVANA campaign" />
+        </div>
+      </section>
+
+      <section class="lookbook section-wide">
+        <div class="lookbook-head reveal">
+          <p class="kicker" data-i18n="lookbook.sub"></p>
+          <h2 class="display" data-i18n="lookbook.title"></h2>
+        </div>
+        <div class="look-row" id="look-row"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head reveal">
+          <h2 class="display" data-i18n="insta.title"></h2>
+          <a class="btn hoverable" id="ig-follow" href="https://instagram.com/suvana.eg" target="_blank" rel="noopener" data-i18n="insta.cta"></a>
+        </div>
+        <div class="ig-grid" id="ig-grid"></div>
+      </section>
+
+      <section class="news">
+        <h2 class="display reveal" data-i18n="news.title"></h2>
+        <p class="reveal" data-i18n="news.text"></p>
+        <form class="news-form" id="news-form">
+          <input id="news-email" type="email" required data-i18n-placeholder="news.placeholder" />
+          <button class="hoverable" type="submit" data-i18n="news.cta"></button>
+        </form>
+        <p class="news-msg" id="news-msg"></p>
+      </section>
+
+      <footer id="site-footer"></footer>
+    </div>
+    <div id="cart-root"></div>
+    <div id="search-root"></div>
+    <div id="qv-root"></div>
+    <div class="toast" id="toast"></div>
+    <script src="js/translations.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
